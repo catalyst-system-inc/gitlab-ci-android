@@ -45,9 +45,9 @@ RUN cd && \
   rm node-v${NODE_VERSION}-linux-x64.tar.gz
 ENV PATH ${PATH}:/opt/node/bin
 
-
 # ——————————
 # Install Basic React-Native packages
 # ——————————
 RUN npm install react-native-cli -g
 RUN npm install rnpm -g
+RUN npm install yarn -g
