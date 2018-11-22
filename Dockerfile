@@ -75,7 +75,7 @@ RUN { \
          --silent \
          --build="$gnuArch" \
          --disable-install-doc \
-         --enable-shared \
+         --enable-shared && \
     make --silent -j "$(nproc)" && \
     make --silent install && \
     apt-get --quiet purge -y --auto-remove $BUILD_DEPS && \
