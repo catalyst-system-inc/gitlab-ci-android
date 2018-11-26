@@ -27,6 +27,7 @@ RUN wget --quiet --output-document=android-sdk.zip https://dl.google.com/android
     echo y | ${SDK_ROOT}/tools/bin/sdkmanager "extras;google;google_play_services" >/dev/null 2>&1 && \
     echo y | ${SDK_ROOT}/tools/bin/sdkmanager "extras;google;m2repository" >/dev/null 2>&1 && \
     touch local.properties && \
+    mkdir -p ${ANDROID_NDK_HOME} && \
     echo "sdk.dir=${ANDROID_HOME}" >> local.properties && \
     echo "ndk.dir=${ANDROID_NDK_HOME}" >> local.properties
 
