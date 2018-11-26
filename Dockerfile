@@ -3,8 +3,8 @@ FROM openjdk:8-jdk
 # set Env
 ENV SDK_ROOT="/sdk"
 ENV ANDROID_SDK_TOOLS="3859397" \
-    ANDROID_BUILD_TOOLS="28.0.3" \
-    ANDROID_COMPILE_SDK="28" \
+    ANDROID_BUILD_TOOLS="27.0.3" \
+    ANDROID_COMPILE_SDK="27" \
     ANDROID_HOME="${SDK_ROOT}" \
     ANDROID_NDK_HOME="${SDK_ROOT}/ndk-bundle/" \
     PATH="$PATH:${SDK_ROOT}/platform-tools/"
