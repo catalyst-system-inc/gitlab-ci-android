@@ -76,4 +76,9 @@ ENV PATH ${PATH}:/opt/node/bin
 # ——————————
 RUN npm install react-native-cli rnpm yarn -g
 
+# ——————————
+# Install ionic cordova
+# ——————————
+RUN npm install -g cordova
+
 CMD [ "irb" ]
